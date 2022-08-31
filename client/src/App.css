@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  text-align: left;
+}
+
+input, button {
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+span, .error {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+.error {
+  display: block;
+}
